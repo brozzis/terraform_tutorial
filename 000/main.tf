@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  required_version = ">= 1.2.0"
+  required_version = ">= 1.1.0"
 }
 
 provider "aws" {
@@ -23,3 +23,7 @@ resource "aws_instance" "example_server" {
   }
 }
 
+output "name" {
+  value = aws_instance.example_server.tags.Name
+  
+}
