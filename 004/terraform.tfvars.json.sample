@@ -1,0 +1,14 @@
+{
+  "list_default_empty": [],
+  "long_type": {
+    "bar": {
+      "bar": "bar",
+      "foo": "bar"
+    },
+    "buzz": [
+      "fizz",
+      "buzz"
+    ]
+  },
+    "variabile": "da json tfvars.json"
+}
