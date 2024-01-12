@@ -1,0 +1,2 @@
+
+output "abc" { value = "ciao" }

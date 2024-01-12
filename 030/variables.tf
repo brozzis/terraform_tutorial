@@ -24,7 +24,7 @@ variable "secret" {
   sensitive = true
 }
 
-variable "tags" {
+variable "my_tags" {
     description = "la lista dei tag da assegnare alla risorsa"
     type = map(string)
     default = {

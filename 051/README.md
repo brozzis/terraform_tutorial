@@ -19,27 +19,3 @@
 ```bash
 terraform test
 ```
-
-
-```yaml
-check "health_check" {
- 	   data "http" "terraform_io" {
-  	    url = "https://www.terraform.io"
- 	   }
-  	  assert {
-   	    condition = data.http.terraform_io.status_code == 200
-   	    error_message = "${data.http.terraform_io.url} returned an unhealthy status code"
-  	  }
-}
-```
-
-## Logging
-
-as already mentioned
-
-```bash
-TF_LOG_PROVIDER=[INFO|DEBUG|TRACE|...]
-TF_LOG_PATH=$(pwd)/somelog.log
-```
-
-

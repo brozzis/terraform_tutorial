@@ -14,7 +14,6 @@ variable "project_team" {
     }
 }
 
-
 output "name" {
   value = abs(-42)
 }
@@ -36,11 +35,12 @@ output "for_string_directive" {
 
 variable "saluto" {
     type = string
-    default = "ciao"
+    default = "hello"
 }
 
 
 output ternary_syntax {
-    value = var.saluto == "ciao" ? "ciao anche a te" : "buongiorno"
+    value = var.saluto == "ciao" ? "ciao anche a te" : "hello to you too"
 }
+
 

@@ -31,14 +31,6 @@ variable "lista" {
   default = ["uno", "due", "tre"]
 }
 
-/*
-locals {
-    tags = {
-        "Name" = "istanza di test"
-        "Environment" = "test"
-    }
-}
-*/
 
 variable "tags" {
     description = "tags di default"

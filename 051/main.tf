@@ -21,8 +21,18 @@ provider "aws" {
   profile = "sbrozzi@sinthera"
 }
 
+
+module "ec2" {
+   source = "./aws"
+}
+
 resource "local_file" "config" {
   content  = "{\n  \"region\": \"${var.regione}\"}"
+  filename = "config.json"
+}
+
+resource "local_file" "config_ip" {
+  content  = "{\n  \"remote_ip\": \"${module.ec2.instance_ip}\"}"
   filename = "config.json"
 }
 
@@ -33,7 +43,7 @@ variable "bucket_prefix" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "${var.bucket_prefix}-bucket"
+  bucket = "${var.bucket_prefix}-bucket-g1bberish678"
 }
 
 output "bucket_name" {

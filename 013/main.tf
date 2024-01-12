@@ -26,7 +26,7 @@ variable "my_list" {
 
 
 variable "environment" {
-  default = "dev"
+  default = "prod"
 }
 
 resource "aws_iam_user" "the-accounts" {

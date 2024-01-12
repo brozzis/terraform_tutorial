@@ -25,3 +25,7 @@ resource "aws_instance" "example_server" {
   }
 }
 
+output "sec" {
+  value = var.secret
+  sensitive = true
+}

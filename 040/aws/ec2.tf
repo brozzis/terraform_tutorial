@@ -32,8 +32,3 @@ resource "aws_instance" "example_server" {
 
   tags = var.tags
 }
-
-
-output "instance_ip" {
-  value = aws_instance.example_server.public_ip
-}

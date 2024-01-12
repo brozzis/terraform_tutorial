@@ -1,0 +1,194 @@
+2024-01-12T09:17:58.687+0100 [INFO]  Terraform version: 1.6.5
+2024-01-12T09:17:58.688+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.36.0
+2024-01-12T09:17:58.688+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.19.1
+2024-01-12T09:17:58.688+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-01-12T09:17:58.688+0100 [DEBUG] using github.com/zclconf/go-cty v1.14.1
+2024-01-12T09:17:58.688+0100 [INFO]  Go runtime version: go1.21.3
+2024-01-12T09:17:58.688+0100 [INFO]  CLI args: []string{"terraform", "refresh"}
+2024-01-12T09:17:58.688+0100 [TRACE] Stdout is a terminal of width 111
+2024-01-12T09:17:58.688+0100 [TRACE] Stderr is a terminal of width 111
+2024-01-12T09:17:58.688+0100 [TRACE] Stdin is a terminal
+2024-01-12T09:17:58.688+0100 [DEBUG] Attempting to open CLI config file: /Users/ste/.terraformrc
+2024-01-12T09:17:58.688+0100 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-01-12T09:17:58.688+0100 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-01-12T09:17:58.688+0100 [DEBUG] ignoring non-existing provider search directory /Users/ste/.terraform.d/plugins
+2024-01-12T09:17:58.688+0100 [DEBUG] ignoring non-existing provider search directory /Users/ste/Library/Application Support/io.terraform/plugins
+2024-01-12T09:17:58.688+0100 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2024-01-12T09:17:58.688+0100 [INFO]  CLI command args: []string{"refresh"}
+2024-01-12T09:17:58.689+0100 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2024-01-12T09:17:58.689+0100 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2024-01-12T09:17:58.689+0100 [DEBUG] New state was assigned lineage "27f9a218-591c-e074-c8b2-fb47c450357c"
+2024-01-12T09:17:58.689+0100 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2024-01-12T09:17:58.689+0100 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2024-01-12T09:17:58.689+0100 [DEBUG] checking for provisioner in "."
+2024-01-12T09:17:58.697+0100 [DEBUG] checking for provisioner in "/usr/local/bin"
+2024-01-12T09:17:58.697+0100 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2024-01-12T09:17:58.698+0100 [TRACE] backend/local: requesting state manager for workspace "default"
+2024-01-12T09:17:58.698+0100 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2024-01-12T09:17:58.698+0100 [TRACE] backend/local: requesting state lock for workspace "default"
+2024-01-12T09:17:58.698+0100 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2024-01-12T09:17:58.698+0100 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2024-01-12T09:17:58.698+0100 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2024-01-12T09:17:58.698+0100 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2024-01-12T09:17:58.698+0100 [TRACE] backend/local: reading remote state for workspace "default"
+2024-01-12T09:17:58.698+0100 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2024-01-12T09:17:58.698+0100 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2024-01-12T09:17:58.698+0100 [TRACE] statemgr.Filesystem: read nil snapshot
+2024-01-12T09:17:58.698+0100 [TRACE] backend/local: populating backend.LocalRun for current working directory
+2024-01-12T09:17:58.699+0100 [TRACE] terraform.NewContext: starting
+2024-01-12T09:17:58.699+0100 [TRACE] terraform.NewContext: complete
+2024-01-12T09:17:58.699+0100 [TRACE] backend/local: requesting interactive input, if necessary
+2024-01-12T09:17:58.699+0100 [TRACE] Context.Input: Prompting for provider arguments
+2024-01-12T09:17:58.699+0100 [TRACE] backend/local: running validation operation
+2024-01-12T09:17:58.699+0100 [DEBUG] Building and walking validate graph
+2024-01-12T09:17:58.699+0100 [TRACE] building graph for walkValidate
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] ConfigTransformer: Starting for path:
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.LocalTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.OutputTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.checkTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.StateTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2024-01-12T09:17:58.699+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2024-01-12T09:17:58.699+0100 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  root - *terraform.nodeCloseModule
+  ------
+2024-01-12T09:17:58.700+0100 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2024-01-12T09:17:58.700+0100 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2024-01-12T09:17:58.700+0100 [DEBUG] Starting graph walk: walkValidate
+2024-01-12T09:17:58.700+0100 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2024-01-12T09:17:58.700+0100 [TRACE] vertex "root": visit complete
+2024-01-12T09:17:58.700+0100 [DEBUG] Refresh is really just plan now, so creating a NormalMode plan
+2024-01-12T09:17:58.700+0100 [DEBUG] Building and walking plan graph for NormalMode
+2024-01-12T09:17:58.700+0100 [TRACE] building graph for walkPlan
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] ConfigTransformer: Starting for path:
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.LocalTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.OutputTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.checkTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.StateTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  root - *terraform.nodeCloseModule
+  ------
+2024-01-12T09:17:58.701+0100 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2024-01-12T09:17:58.701+0100 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2024-01-12T09:17:58.701+0100 [DEBUG] Starting graph walk: walkPlan
+2024-01-12T09:17:58.701+0100 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2024-01-12T09:17:58.701+0100 [TRACE] vertex "root": visit complete
+2024-01-12T09:17:58.701+0100 [DEBUG] no planned changes, skipping apply graph check
+2024-01-12T09:17:58.701+0100 [INFO]  backend/local: refresh calling Refresh
+2024-01-12T09:17:58.701+0100 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2024-01-12T09:17:58.701+0100 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2024-01-12T09:17:58.701+0100 [TRACE] statemgr.Filesystem: read nil snapshot
+2024-01-12T09:17:58.701+0100 [TRACE] statemgr.Filesystem: no original state snapshot to back up
+2024-01-12T09:17:58.701+0100 [TRACE] statemgr.Filesystem: state has changed since last snapshot, so incrementing serial to 1
+2024-01-12T09:17:58.701+0100 [TRACE] statemgr.Filesystem: writing snapshot at terraform.tfstate
+2024-01-12T09:17:58.728+0100 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2024-01-12T09:17:58.729+0100 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock

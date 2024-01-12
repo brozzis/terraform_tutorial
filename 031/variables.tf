@@ -4,7 +4,6 @@ variable "immagine" {
   default     = "ami-025765768cef3dca5"
 }
 
-
 variable "tipo_istanza" {
   description = "The type of instance to start"
   type = string
@@ -30,15 +29,6 @@ variable "lista" {
   type = list(string)
   default = ["uno", "due", "tre"]
 }
-
-/*
-locals {
-    tags = {
-        "Name" = "istanza di test"
-        "Environment" = "test"
-    }
-}
-*/
 
 variable "tags" {
     description = "tags di default"

@@ -15,7 +15,7 @@ variable "project_team" {
 }
 
 output "for_directive_index_if_else_strip" {
-    value=trimspace(<<EOT
+    value=trimspace(<<-EOT
     %{~ for i, name in var.user_names ~}
         ${name}
         %{ if i < length(var.user_names) - 1 }
@@ -31,7 +31,7 @@ EOT
 
 variable "environment" {
   type = string
-  default = "DEV"
+  default = "prod"
 }
 
 
@@ -54,3 +54,7 @@ output "for_directive_index_if_else_strip2" {
 EOT
 }
 
+
+output "use_join" {
+    value = join(", ", var.user_names)
+}

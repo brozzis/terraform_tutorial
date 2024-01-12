@@ -5,7 +5,7 @@ resource "null_resource" "local" {
         workspace = terraform.workspace
     }
     provisioner "local-exec" {
-        command = "ls -la > /tmp/ls.txt"
+        command = "terraform workspace list"
     }
 }
 
@@ -32,29 +32,9 @@ output "nuova_posizione" {
 }
 
 
-data "aws_ami" "my_ami" {
-    most_recent = true
-    owners          = ["amazon"]
-    filter {
-      name = "name"
-      values = ["amzn2-ami-hvm*"]
-    }
-}
-
-
-resource "aws_instance" "server" {
-  ami   = data.aws_ami.my_ami.id
-  ## ami           = var.immagine
-  instance_type = var.tipo_istanza
-
-  tags = var.tags
-
-  depends_on = [ null_resource.terza ]
-}
-
 resource "null_resource" "cleanup" {
     provisioner "local-exec" {
         command = "terraform workspace select default; terraform workspace delete -force newyork"
     }
-    depends_on = [ aws_instance.server ]
+    depends_on = [ null_resource.terza ]
 }

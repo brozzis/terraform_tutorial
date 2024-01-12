@@ -5,7 +5,7 @@ resource "null_resource" "local" {
         workspace = terraform.workspace
     }
     provisioner "local-exec" {
-        command = "ls -la > /tmp/ls.txt"
+        command = "terraform workspace list"
     }
 }
 
