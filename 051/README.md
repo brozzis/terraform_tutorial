@@ -1,4 +1,4 @@
-## Tests 
+## Tests 
 
 > By default, tests within Terraform create real infrastructure and can run assertions and validations against that infrastructure. This is analogous to integration testing because you are testing Terraform's core functionality by executing operations and validating the infrastructure Terraform creates.
 
