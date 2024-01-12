@@ -1,4 +1,4 @@
-## Think bigger
+## Think bigger
 
 Best practices in IT should involve:
 
